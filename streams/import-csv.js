@@ -18,7 +18,7 @@ async function ImportCSV() {
   for await (const line of linesParse) {
     const [title, description] = line;
 
-    await fetch('http://localhost:3334/tasks', {
+    await fetch('http://localhost:3333/tasks', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
